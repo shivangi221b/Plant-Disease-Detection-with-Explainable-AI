@@ -1,0 +1,16 @@
+streamlit
+torch
+torchvision
+numpy
+pillow
+opencv-python
+matplotlib
+scikit-image
+scikit-learn
+lime
+requests
+google-generativeai
+openai
+tqdm
+efficientnet_pytorch
+seaborn
