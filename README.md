@@ -9,7 +9,7 @@ This project provides an AI-powered plant disease diagnosis system with Explaina
 This repository provides a complete end-to-end pipeline for plant disease classification, including:
 
 - Automatic dataset download & preprocessing
-- Fine-tuned EfficientNetB3 classifier (92.3% accuracy)
+- Fine-tuned EfficientNetB3 classifier (98.72% accuracy)
 - Real-time inference through a Streamlit UI
 - Visual explanations using GRAD-CAM & LIME
 - AI-generated treatment recommendations via LLMs (Gemini, Llama2, Mistral)
@@ -19,18 +19,18 @@ This repository provides a complete end-to-end pipeline for plant disease classi
 
 ## **Features**
 
-- ✅ EfficientNetB3 deep learning model for plant disease classification (38 disease classes)
-- ✅ GRAD-CAM image & text explanations (0.08s inference)
-- ✅ LIME image & text explanations (3-5s inference)
-- ✅ Beautiful Streamlit UI for interactive uploads with button-driven workflow
-- ✅ Multiple LLM backends: Gemini 2.5 Flash (cloud), Llama2 (local), Mistral (local)
-- ✅ Side-by-side image/heatmap visualization
-- ✅ Top-5 disease predictions with confidence scores
-- ✅ Fully standalone .py script (no separate API calls needed)
+- EfficientNetB3 deep learning model for plant disease classification (38 disease classes)
+- GRAD-CAM image & text explanations
+- LIME image & text explanations
+- Beautiful Streamlit UI for interactive uploads with button-driven workflow
+- Multiple LLM backends: Gemini 2.5 Flash (cloud), Llama2 (local), Mistral (local)
+- Side-by-side image/heatmap visualization
+- Top-5 disease predictions with confidence scores
+- Fully standalone .py script (no separate API calls needed)
 
 ---
 
-## **⚠️ IMPORTANT NOTES BEFORE RUNNING**
+## **IMPORTANT NOTES BEFORE RUNNING**
 
 ### **API Key Setup (Required for LLM Features)**
 
@@ -57,7 +57,7 @@ This project uses Large Language Models to generate treatment recommendations. Y
    ```
 4. Keep the terminal running while using the app
 
-### **⏱️ Performance Warning**
+### **Performance Warning**
 
 - **First-time startup:** 2-5 minutes (model loading)
 - **Each analysis:** 1-2 minutes per image
@@ -77,7 +77,7 @@ This project uses Large Language Models to generate treatment recommendations. Y
   - `best_model.pth` (pre-trained model weights)
   - `requirements.txt` (dependencies list)
 
-### **2. 🛠️ Installation**
+### **2. Installation**
 
 **Step 1 — Clone or Download Repository**
 ```bash
@@ -99,7 +99,7 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### **3. 📁 Project Folder Structure**
+### **3. Project Folder Structure**
 
 ```
 project/
@@ -120,7 +120,7 @@ project/
         └── best_model.pth
 ```
 
-### **4. ▶️ Running the Streamlit App**
+### **4. Running the Streamlit App**
 
 Once installed, simply run:
 
@@ -136,9 +136,9 @@ streamlit run plant_disease_detection.py
 
 ## **Usage Workflow**
 
-1. **Upload Image** — Click file uploader to select a JPG/PNG/BMP leaf image
-2. **View Results** — See disease prediction, confidence score, heatmap, and treatment recommendations
-3. **Select LLM** — Choose between Gemini (cloud), Llama2 (local), or Mistral (local) from sidebar
+1. **Select LLM** — Choose between Gemini (cloud), Llama2 (local), or Mistral (local) from sidebar
+2. **Upload Image** — Click file uploader to select a JPG/PNG/BMP leaf image
+3. **View Results** — See disease prediction, confidence score, heatmap, and treatment recommendations
 4. **Review Top-5** — Expand to see alternative predictions with confidence scores
 
 ---
